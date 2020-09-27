@@ -12,7 +12,6 @@ Showing how to setup different webpack-config for prod or dev with **webpack-mer
 - Run dev then show local server
   - auto refresh thanks to **webpack-dev-server**
   - why typing with typescript? => trigger error with color and show result
-  - explain @types
 
 ## Author
 
