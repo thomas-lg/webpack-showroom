@@ -1,0 +1,34 @@
+{
+	"name": "webpack-showroom",
+	"version": "1.0.0",
+	"description": "Introduction to the power of Webpack 🚀!",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --config config/webpack.common.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thomas-lg/webpack-showroom.git"
+	},
+	"keywords": [
+		"webpack",
+		"demo",
+		"performances",
+		"typescript",
+		"optimization"
+	],
+	"author": "thomas-lg",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thomas-lg/webpack-showroom/issues"
+	},
+	"homepage": "https://github.com/thomas-lg/webpack-showroom#readme",
+	"devDependencies": {
+		"html-webpack-plugin": "^4.5.0",
+		"prettier": "^2.1.2",
+		"ts-loader": "^8.0.4",
+		"typescript": "^4.0.3",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12"
+	}
+}
