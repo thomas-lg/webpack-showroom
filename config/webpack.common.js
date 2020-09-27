@@ -17,8 +17,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
 	output: {
-		filename:
-			PLATFORM === 'prod' ? '[name].[hash].bundle.js' : '[name].bundle.js',
+		filename: '[name].[hash].bundle.js',
 		path: path.resolve(__dirname, '..', 'dist/'),
 		publicPath: '/',
 	},
