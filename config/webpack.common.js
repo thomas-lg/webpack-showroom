@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+	.BundleAnalyzerPlugin;
 
-module.exports = ({ PLATFORM }) => {
+module.exports = ({ PLATFORM, STAT }) => {
 	return {
 		mode: PLATFORM === 'prod' ? 'production' : 'development',
 		devtool: PLATFORM === 'prod' ? 'source-map' : 'eval-source-map',
@@ -24,10 +26,23 @@ module.exports = ({ PLATFORM }) => {
 		resolve: {
 			extensions: ['.tsx', '.ts', '.js'],
 		},
-		output: {
-			filename: 'bundle.js',
-			path: path.resolve(__dirname, '..', 'dist'),
-		},
-		plugins: [new HtmlWebpackPlugin()],
+		plugins: [
+			STAT
+				? new BundleAnalyzerPlugin()
+				: new HtmlWebpackPlugin({
+						template: './index.html',
+						favicon: './favicon.ico',
+						removeComments: true,
+						collapseWhitespace: true,
+						removeRedundantAttributes: true,
+						useShortDoctype: true,
+						removeEmptyAttributes: true,
+						removeStyleLinkTypeAttributes: true,
+						keepClosingSlash: true,
+						minifyJS: true,
+						minifyCSS: true,
+						minifyURLs: true,
+				  }),
+		],
 	};
 };
