@@ -2,7 +2,7 @@
 
 Introduction to the power of Webpack 🚀!
 
-Navigate through the branches to begin your **webpack/typescript** tiny journey 😀!
+Navigate through the **branches** to begin your **webpack/typescript** tiny journey 😀!
 
 The goal of this repo is to demonstrate quickly how webpack work and the importance of type definition in your project.
 
