@@ -4,7 +4,7 @@ Introduction to the power of Webpack 🚀!
 
 Navigate through the **branches** to begin your **webpack/typescript** tiny journey 😀!
 
-The goal of this repo is to demonstrate quickly how webpack work and the importance of type definition in your project.
+The goal of this repo is to demonstrate quickly how webpack works and the importance of type definition in your project.
 
 It will help you
 
@@ -53,9 +53,9 @@ if (greenCar) {
 
 Go for `npm run analyze`
 
-**webpack-bundle-analizer** gives you the opportunity to visualize your bundle via a tree. It's now easy to spot if a bundle has or does not have **tree shaking**. You can now decide by yourself to keep or choose another package to fulfill your wishes!
+**webpack-bundle-analizer** gives you the opportunity to visualize your bundle via a tree. It's now easy to spot if a package has or does not have **tree shaking**. You can now decide by yourself to keep or choose another package to fulfill your wishes!
 
-Right answer is obviously to change if you can 😁
+Right answer is obviously to change if you can 😁.
 
 ## Author
 
