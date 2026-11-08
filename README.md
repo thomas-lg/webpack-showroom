@@ -59,4 +59,4 @@ Right answer is obviously to change if you can 😁.
 
 ## Author
 
-Thomas Le Gougaud [@thomas-lg](https://github.com/thomas-lg)
+[@thomas-lg](https://github.com/thomas-lg)
